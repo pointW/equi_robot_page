@@ -30,7 +30,7 @@ img.rounded {
 </style>
 
 ## Paper
-[arXiv](https://arxiv.org/pdf/2203.04923.pdf)  
+Preprint: [arXiv](https://arxiv.org/pdf/2203.04923.pdf)  
 
 <div style="width:100%; display:flex">
   <div class="people_column">
@@ -67,6 +67,13 @@ img.rounded {
 
 Khoury College of Computer Sciences  
 Northeastern University
+
+## Idea
+We evaluate the on-robot learning using O(2)-Equivariant SAC in four different manipulation tasks. 
+
+<div style="text-align:center">
+  <img src="img/env.png" alt="env" height="300"/>
+</div>
 
 ## Video
 
