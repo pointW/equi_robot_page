@@ -86,7 +86,7 @@ In O(2)-Equivariant SAC, we hardcode the symmetries of the task in the structure
   <img src="img/table.png" width="70%">
 </p>
 
-Our O(2)-Equivariant SAC only requires less than 1 hour to solve Block Picking, Clutter Grasping, and Block Pushing.
+Our method is sample efficient enough to learn manipulation policies directly on a real-world system. O(2)-Equivariant SAC only requires less than 1 hour to solve Block Picking, Clutter Grasping, and Block Pushing. In Block in Bowl, our method requires 2 hours and 40 minitues to converge.
 
 <div>
   <div class="lc">
