@@ -72,8 +72,14 @@ Northeastern University
 We evaluate the on-robot learning using O(2)-Equivariant SAC in four different manipulation tasks. 
 
 <p align="center">
-  <img src="img/envs.png" width="100%">
-  <p class="caption">The Experimental Environments</p>
+  <img src="img/actor_critic.png" width="600px">
+</p>
+
+In O(2)-Equivariant SAC, we hardcode the symmetries of the task in the structure of the actor and the critic to improve the sample efficiency. Specifically, if the input state of the actor (left) is rotated, the output action of the actor will be rotated by the same amount. If the input state and action of the critic (right) are rotated, the output Q-value of the critic will remain the same.
+
+<p align="center">
+  <img src="img/env.png" width="100%">
+  <p class="caption">The experimental environments. Top: the simulation environments in PyBullet. Bottom: the real-world environments.</p>
 </p>
 
 <p align="center">
