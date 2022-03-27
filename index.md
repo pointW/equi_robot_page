@@ -75,7 +75,7 @@ We evaluate the on-robot learning using O(2)-Equivariant SAC in four different m
   <img src="img/actor_critic.png" width="600px">
 </p>
 
-In O(2)-Equivariant SAC, we hardcode the symmetries of the task in the structure of the actor and the critic to improve the sample efficiency. Specifically, if the input state of the actor (left) is rotated, the output action of the actor will be rotated by the same amount. If the input state and action of the critic (right) are rotated, the output Q-value of the critic will remain the same.
+In O(2)-Equivariant SAC, we hardcode the symmetries of the task in the structure of the actor and the critic to improve the sample efficiency. Specifically, if the input state of the actor (left) is rotated, the output action of the actor will be rotated by the same amount. If the input state and action of the critic (right) are rotated, the output Q-value of the critic will remain the same. Please see our [prior work](https://arxiv.org/pdf/2203.04439.pdf) for a detailed description of the method.
 
 <p align="center">
   <img src="img/env.png" width="100%">
