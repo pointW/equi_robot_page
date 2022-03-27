@@ -7,7 +7,7 @@
 }
 .lc{
   float: left;
-  width: 16.66%;
+  width: 25%;
 }
 .caption {
     margin: 0;
@@ -71,9 +71,37 @@ Northeastern University
 ## Idea
 We evaluate the on-robot learning using O(2)-Equivariant SAC in four different manipulation tasks. 
 
-<div style="text-align:center">
-  <img src="img/env.png" alt="env" height="300"/>
+<p align="center">
+  <img src="img/envs.png" width="100%">
+  <p class="caption">The Experimental Environments</p>
+</p>
+
+<p align="center">
+  <img src="img/table.png" width="70%">
+</p>
+
+Our O(2)-Equivariant SAC only requires less than 1 hour to solve Block Picking, Clutter Grasping, and Block Pushing.
+
+<div>
+  <div class="lc">
+    <img src="img/real_pick.png" style="width:100%">
+    <p class="caption">Block Picking</p>
+  </div>
+  <div class="lc">
+    <img src="img/real_grasp.png" style="width:100%">
+    <p class="caption">Clutter Grasping</p>
+  </div>
+  <div class="lc">
+    <img src="img/real_push.png" style="width:100%">
+    <p class="caption">Block Pushing</p>
+  </div>
+  <div class="lc">
+    <img src="img/real_bowl.png" style="width:100%">
+    <p class="caption">Block in Bowl</p>
+  </div>
 </div>
+
+Compared with the baseline, our method has a much higher sample efficiency in on-robot learning.
 
 ## Video
 
