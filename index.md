@@ -119,7 +119,7 @@ Compared with the baseline, our method has a much higher sample efficiency in on
 {% raw %}
 ```
 @article{wang2022onrobot,
-  title={On-Robot Policy Learning with {$\mathrm{O}(2)$}-Equivariant SAC},
+  title={On-Robot Learning With Equivariant Models},
   author={Dian Wang and Mingxi Jia and Xupeng Zhu and Robin Walters and Robert Platt},
   journal={arXiv preprint arXiv:2203.04923},
   year={2022}
