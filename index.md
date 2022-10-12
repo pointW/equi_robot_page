@@ -30,7 +30,8 @@ img.rounded {
 </style>
 
 ## Paper
-Preprint: [arXiv](https://arxiv.org/pdf/2203.04923.pdf)  
+Published at The 6th Annual Conference on Robot Learning (CoRL 2022)  
+[arXiv](https://arxiv.org/pdf/2203.04923.pdf)  
 
 <div style="width:100%; display:flex">
   <div class="people_column">
@@ -118,11 +119,13 @@ Compared with the baseline, our method has a much higher sample efficiency in on
 ## Citation
 {% raw %}
 ```
-@article{wang2022onrobot,
-  title={On-Robot Learning With Equivariant Models},
-  author={Dian Wang and Mingxi Jia and Xupeng Zhu and Robin Walters and Robert Platt},
-  journal={arXiv preprint arXiv:2203.04923},
-  year={2022}
+@inproceedings{
+wang2022onrobot,
+title={On-Robot Learning With Equivariant Models},
+author={Dian Wang and Mingxi Jia and Xupeng Zhu and Robin Walters and Robert Platt},
+booktitle={6th Annual Conference on Robot Learning},
+year={2022},
+url={https://openreview.net/forum?id=K8W6ObPZQyh}
 }
 ```
 {% endraw %}
