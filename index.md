@@ -3,7 +3,7 @@
 <style>
 .column {
   float: left;
-  width: 33.33%;
+  width: 25%;
 }
 .lc{
   float: left;
@@ -70,24 +70,48 @@ Khoury College of Computer Sciences
 Northeastern University
 
 ## Idea
-We evaluate the on-robot learning using O(2)-Equivariant SAC in four different manipulation tasks. 
+We implement sample-efficient on-robot learning using Equivariant SAC. 
+
+<p align="center">
+  <img src="img/push_example.png" width="600px">
+</p>
+
+Many robotic manipulation tasks have spatial symmetries. In the block pushing example, rotating the state and the action simultaneously will not change the outcome of the pushing action.
 
 <p align="center">
   <img src="img/actor_critic.png" width="600px">
 </p>
 
-In O(2)-Equivariant SAC, we hardcode the symmetries of the task in the structure of the actor and the critic to improve the sample efficiency. Specifically, if the input state of the actor (left) is rotated, the output action of the actor will be rotated by the same amount. If the input state and action of the critic (right) are rotated, the output Q-value of the critic will remain the same. Please see our [prior work](https://arxiv.org/pdf/2203.04439.pdf) for a detailed description of the method.
+In Equivariant SAC, we hardcode the symmetries of the task in the structure of the actor and the critic to improve the sample efficiency. Specifically, if the input state of the actor (left) is rotated, the output action of the actor will be rotated by the same amount. If the input state and action of the critic (right) are rotated, the output Q-value of the critic will remain the same. Please see our [prior work](https://arxiv.org/pdf/2203.04439.pdf) for a detailed description of the method.
 
-<p align="center">
-  <img src="img/env.png" width="100%">
-  <p class="caption">The experimental environments. Top: the simulation environments in PyBullet. Bottom: the real-world environments.</p>
+<div>
+  <div class="column">
+    <img src="img/pick.gif" style="width:100%">
+    <p class="caption">Block Picking</p>
+  </div>
+  <div class="column">
+    <img src="img/push.gif" style="width:100%">
+    <p class="caption">Block Pushing</p>
+  </div>
+  <div class="column">
+    <img src="img/grasp.gif" style="width:100%">
+    <p class="caption">Clutter Grasping</p>
+  </div>
+  <div class="column">
+    <img src="img/bowl.gif" style="width:100%">
+    <p class="caption">Block in Bowl</p>
+  </div>
+</div>
+
+<p align="center" class="caption">
+  The experimental environments. Top: the simulation environments in PyBullet. Bottom: the real-world experimental environments.
 </p>
 
 <p align="center">
   <img src="img/table.png" width="70%">
 </p>
 
-Our method is sample efficient enough to learn manipulation policies directly on a real-world system. O(2)-Equivariant SAC only requires less than 1 hour to solve Block Picking, Clutter Grasping, and Block Pushing. In Block in Bowl, our method requires 2 hours and 40 minitues to converge.
+Our method is sample efficient enough to learn manipulation policies directly on a real-world system. Equivariant SAC only requires less than 1 hour to solve Block Picking, Clutter Grasping, and Block Pushing. In Block in Bowl, our method requires 2 hours and 40 minitues to converge.
 
 <div>
   <div class="lc">
@@ -95,12 +119,12 @@ Our method is sample efficient enough to learn manipulation policies directly on
     <p class="caption">Block Picking</p>
   </div>
   <div class="lc">
-    <img src="img/real_grasp.png" style="width:100%">
-    <p class="caption">Clutter Grasping</p>
-  </div>
-  <div class="lc">
     <img src="img/real_push.png" style="width:100%">
     <p class="caption">Block Pushing</p>
+  </div>
+  <div class="lc">
+    <img src="img/real_grasp.png" style="width:100%">
+    <p class="caption">Clutter Grasping</p>
   </div>
   <div class="lc">
     <img src="img/real_bowl.png" style="width:100%">
