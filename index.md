@@ -104,7 +104,7 @@ In Equivariant SAC, we hardcode the symmetries of the task in the structure of t
 </div>
 
 <p align="center" class="caption">
-  The experimental environments. Top: the simulation environments in PyBullet. Bottom: the real-world experimental environments.
+  The real-world experimental environments.
 </p>
 
 <p align="center">
