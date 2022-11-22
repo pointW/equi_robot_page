@@ -137,7 +137,7 @@ Compared with the baseline, our method has a much higher sample efficiency in on
 ## Video
 
 <div style="text-align:center">
-	<iframe width="853" height="480" src="https://www.youtube.com/embed/HDYoOXMojkY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<iframe width="853" height="480" src="https://www.youtube.com/embed/NEUDTVXlKeg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 ## Code
