@@ -140,6 +140,12 @@ Compared with the baseline, our method has a much higher sample efficiency in on
 	<iframe width="853" height="480" src="https://www.youtube.com/embed/NEUDTVXlKeg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
+## Spotlight Talk
+
+<div style="text-align:center">
+	<iframe width="853" height="480" src="https://www.youtube.com/embed/RcTeSSqilqw?start=355" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+	
 ## Code
 [https://github.com/pointW/equi_rl](https://github.com/pointW/equi_rl)
 
